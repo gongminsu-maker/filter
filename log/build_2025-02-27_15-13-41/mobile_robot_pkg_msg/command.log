@@ -1,0 +1,6 @@
+Invoking command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gongminsu/mobile_robot/src/mobile_robot_pkg_msg -DCMAKE_INSTALL_PREFIX=/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg
+Invoked command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gongminsu/mobile_robot/src/mobile_robot_pkg_msg -DCMAKE_INSTALL_PREFIX=/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg
+Invoking command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg -- -j8 -l8
+Invoked command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg -- -j8 -l8
+Invoking command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg
+Invoked command in '/home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gongminsu/mobile_robot/build/mobile_robot_pkg_msg
