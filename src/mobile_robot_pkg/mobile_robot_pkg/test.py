@@ -3,7 +3,7 @@ import numpy as np
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import Imu
-from geometry_msgs.msg import Twist, Pose
+from geometry_msgs.msg import Twist
 
 class StopAtX(Node):
     def __init__(self):
@@ -39,13 +39,11 @@ class StopAtX(Node):
 
     def send_velocity_command(self):
         input("Press Enter to start motion...")
-        """ 속도 명령을 발행하는 함수 """
         self.twist = Twist()
         self.twist.linear.x = 0.15
         self.cmd_vel_pub.publish(self.twist)
 
     def odom_callback(self, msg):
-        """ 오도메트리 기반 정지 """
         current_x = msg.pose.pose.position.x
         #self.get_logger().info(f"Odom X: {current_x:.3f}")
 
@@ -55,7 +53,6 @@ class StopAtX(Node):
             self.get_logger().info(f"Stopping! Reached {self.target_x}m")
 
     def pose_callback(self, msg):
-        """ EKF 기반 정지 """
         current_x = msg.position.x
         self.get_logger().info(f"EKF X: {current_x:.3f}")
 

@@ -15,10 +15,8 @@ mobile_robot_pkg/cmd.py
 mobile_robot_pkg/cov.py
 mobile_robot_pkg/cov_3.py
 mobile_robot_pkg/imu_odom.py
-mobile_robot_pkg/kalman_encoder.py
 mobile_robot_pkg/kalman_filter.py
 mobile_robot_pkg/odom.py
-mobile_robot_pkg/squarecontrol.py
 mobile_robot_pkg/test.py
 resource/mobile_robot_pkg
 test/test_copyright.py
