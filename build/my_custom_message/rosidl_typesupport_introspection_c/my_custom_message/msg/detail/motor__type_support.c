@@ -31,7 +31,7 @@ void my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_fi
   my_custom_message__msg__Motor__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_message_member_array[5] = {
   {
     "left_w",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -67,6 +67,40 @@ static rosidl_typesupport_introspection_c__MessageMember my_custom_message__msg_
     NULL  // resize(index) function pointer
   },
   {
+    "left_target_w",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_custom_message__msg__Motor, left_target_w),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "right_target_w",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_custom_message__msg__Motor, right_target_w),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "linear_vel",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -88,7 +122,7 @@ static rosidl_typesupport_introspection_c__MessageMember my_custom_message__msg_
 static const rosidl_typesupport_introspection_c__MessageMembers my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_message_members = {
   "my_custom_message__msg",  // message namespace
   "Motor",  // message name
-  3,  // number of fields
+  5,  // number of fields
   sizeof(my_custom_message__msg__Motor),
   my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_message_member_array,  // message members
   my_custom_message__msg__Motor__rosidl_typesupport_introspection_c__Motor_init_function,  // function to initialize message memory (memory has to be allocated)

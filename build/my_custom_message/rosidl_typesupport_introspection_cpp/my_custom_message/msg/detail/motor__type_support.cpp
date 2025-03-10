@@ -37,7 +37,7 @@ void Motor_fini_function(void * message_memory)
   typed_message->~Motor();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Motor_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Motor_message_member_array[5] = {
   {
     "left_w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -73,6 +73,40 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Motor_message
     nullptr  // resize(index) function pointer
   },
   {
+    "left_target_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_custom_message::msg::Motor, left_target_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "right_target_w",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_custom_message::msg::Motor, right_target_w),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "linear_vel",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -94,7 +128,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Motor_message
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Motor_message_members = {
   "my_custom_message::msg",  // message namespace
   "Motor",  // message name
-  3,  // number of fields
+  5,  // number of fields
   sizeof(my_custom_message::msg::Motor),
   Motor_message_member_array,  // message members
   Motor_init_function,  // function to initialize message memory (memory has to be allocated)

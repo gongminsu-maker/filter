@@ -1,0 +1,144 @@
+[0.388s] Invoking command in '/home/gongminsu/mobile_robot/build/my_custom_message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/gongminsu/mobile_robot/build/my_custom_message -- -j8 -l8
+[0.447s] [  3%] Built target my_custom_message__cpp
+[0.449s] [ 12%] Built target my_custom_message__rosidl_generator_c
+[0.462s] [ 12%] Built target ament_cmake_python_copy_my_custom_message
+[0.489s] [ 22%] Built target my_custom_message__rosidl_typesupport_fastrtps_cpp
+[0.490s] [ 32%] Built target my_custom_message__rosidl_typesupport_cpp
+[0.494s] [ 41%] Built target my_custom_message__rosidl_typesupport_introspection_cpp
+[0.506s] [ 61%] Built target my_custom_message__rosidl_typesupport_fastrtps_c
+[0.506s] [ 61%] Built target my_custom_message__rosidl_typesupport_introspection_c
+[0.507s] [ 70%] Built target my_custom_message__rosidl_typesupport_c
+[0.533s] [ 70%] Built target my_custom_message
+[0.561s] [ 74%] Built target my_custom_message__py
+[0.589s] [ 80%] Built target my_custom_message__rosidl_generator_py
+[0.621s] [ 87%] Built target my_custom_message__rosidl_typesupport_c__pyext
+[0.622s] [ 93%] Built target my_custom_message__rosidl_typesupport_introspection_c__pyext
+[0.627s] [100%] Built target my_custom_message__rosidl_typesupport_fastrtps_c__pyext
+[0.848s] running egg_info
+[0.850s] writing my_custom_message.egg-info/PKG-INFO
+[0.851s] writing dependency_links to my_custom_message.egg-info/dependency_links.txt
+[0.851s] writing top-level names to my_custom_message.egg-info/top_level.txt
+[0.857s] reading manifest file 'my_custom_message.egg-info/SOURCES.txt'
+[0.857s] writing manifest file 'my_custom_message.egg-info/SOURCES.txt'
+[0.899s] [100%] Built target ament_cmake_python_build_my_custom_message_egg
+[0.914s] Invoked command in '/home/gongminsu/mobile_robot/build/my_custom_message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/gongminsu/mobile_robot/build/my_custom_message -- -j8 -l8
+[0.929s] Invoking command in '/home/gongminsu/mobile_robot/build/my_custom_message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/gongminsu/mobile_robot/build/my_custom_message
+[0.941s] -- Install configuration: ""
+[0.941s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/rosidl_interfaces/my_custom_message
+[0.941s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.941s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.941s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.941s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__struct.h
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.h
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__functions.c
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__functions.h
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/motor.h
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_generator_c__visibility_control.h
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/library_path.sh
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/library_path.dsv
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_c.so
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.942s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_fastrtps_c.h
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_c.so
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.c
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_introspection_c.h
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.943s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_c.so
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_c.so
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__struct.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__builder.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__traits.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/motor.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.944s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/dds_fastrtps
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_cpp.so
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.cpp
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp
+[0.945s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_cpp.so
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_cpp.so
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/pythonpath.sh
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/pythonpath.dsv
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info
+[0.946s] -- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/top_level.txt
+[0.946s] -- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.946s] -- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/PKG-INFO
+[0.946s] -- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message
+[0.946s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/libmy_custom_message__rosidl_generator_py.so
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/__init__.py
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_introspection_c.c
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_c.c
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/_motor.py
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/__init__.py
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/_motor_s.c
+[0.947s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.992s] Listing '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message'...
+[0.992s] Listing '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg'...
+[0.998s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.998s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.998s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.999s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_py.so
+[0.999s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/msg/Motor.idl
+[0.999s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/msg/Motor.msg
+[0.999s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/package_run_dependencies/my_custom_message
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/parent_prefix_path/my_custom_message
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/ament_prefix_path.sh
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/ament_prefix_path.dsv
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/path.sh
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/path.dsv
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.bash
+[1.000s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.sh
+[1.001s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.zsh
+[1.001s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.dsv
+[1.001s] -- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/package.dsv
+[1.002s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/packages/my_custom_message
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cExport.cmake
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cExport-noconfig.cmake
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cExport.cmake
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cExport.cmake
+[1.003s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cExport-noconfig.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cppExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cppExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cppExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cppExport-noconfig.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_pyExport.cmake
+[1.004s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_pyExport-noconfig.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_libraries-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_targets-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_messageConfig.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_messageConfig-version.cmake
+[1.005s] -- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/package.xml
+[1.007s] Invoked command in '/home/gongminsu/mobile_robot/build/my_custom_message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/gongminsu/mobile_robot/build/my_custom_message

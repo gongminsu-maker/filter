@@ -1,0 +1,33 @@
+running egg_info
+writing ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/requires.txt
+writing top-level names to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/top_level.txt
+reading manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mobile_robot_pkg/accel.py -> /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg
+copying mobile_robot_pkg/kalman_filter.py -> /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg
+running install
+running install_lib
+copying /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg/accel.py -> /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg
+copying /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg/kalman_filter.py -> /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg
+byte-compiling /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg/accel.py to accel.cpython-310.pyc
+byte-compiling /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg/kalman_filter.py to kalman_filter.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing accel script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing cmd script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing cov script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing cov_3 script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing imu_odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing kalman_encoder script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing kalman_filter script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+Installing test script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+writing list of installed files to '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log'

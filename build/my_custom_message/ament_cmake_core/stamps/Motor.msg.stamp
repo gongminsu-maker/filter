@@ -1,3 +1,5 @@
 float32 left_w
 float32 right_w
+float32 left_target_w
+float32 right_target_w
 float32 linear_vel

@@ -10,6 +10,10 @@ module my_custom_message {
 
       float right_w;
 
+      float left_target_w;
+
+      float right_target_w;
+
       float linear_vel;
     };
   };

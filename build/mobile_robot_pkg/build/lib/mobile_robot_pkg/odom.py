@@ -34,7 +34,7 @@ class DiffDriveOdometry(Node):
     def motor_callback(self, msg):
         self.left_wheel_velocity = self.filter_wheel_noise(msg.left_w)
         self.right_wheel_velocity = msg.right_w
-        self.get_logger().info(f"left_w: {self.left_wheel_velocity}, right_w:{self.right_wheel_velocity}")
+        #self.get_logger().info(f"left_w: {self.left_wheel_velocity}, right_w:{self.right_wheel_velocity}")
         self.update_odometry()
 
     def quaternion_from_euler(self,ai, aj, ak):
@@ -97,7 +97,7 @@ class DiffDriveOdometry(Node):
         odom_msg.child_frame_id = 'base_link'
         odom_msg.pose.pose.position.x = self.x
         odom_msg.pose.pose.position.y = self.y
-        odom_msg.pose.pose.position.z = 0.0
+        odom_msg.pose.pose.position.z = self.theta
         odom_msg.pose.pose.orientation = Quaternion(x=q[0], y=q[1], z=q[2], w=q[3])
         
         # Twist 정보 업데이트 (선속도 및 각속도)

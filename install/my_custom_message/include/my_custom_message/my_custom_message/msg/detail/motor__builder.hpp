@@ -37,16 +37,48 @@ private:
   ::my_custom_message::msg::Motor msg_;
 };
 
+class Init_Motor_right_target_w
+{
+public:
+  explicit Init_Motor_right_target_w(::my_custom_message::msg::Motor & msg)
+  : msg_(msg)
+  {}
+  Init_Motor_linear_vel right_target_w(::my_custom_message::msg::Motor::_right_target_w_type arg)
+  {
+    msg_.right_target_w = std::move(arg);
+    return Init_Motor_linear_vel(msg_);
+  }
+
+private:
+  ::my_custom_message::msg::Motor msg_;
+};
+
+class Init_Motor_left_target_w
+{
+public:
+  explicit Init_Motor_left_target_w(::my_custom_message::msg::Motor & msg)
+  : msg_(msg)
+  {}
+  Init_Motor_right_target_w left_target_w(::my_custom_message::msg::Motor::_left_target_w_type arg)
+  {
+    msg_.left_target_w = std::move(arg);
+    return Init_Motor_right_target_w(msg_);
+  }
+
+private:
+  ::my_custom_message::msg::Motor msg_;
+};
+
 class Init_Motor_right_w
 {
 public:
   explicit Init_Motor_right_w(::my_custom_message::msg::Motor & msg)
   : msg_(msg)
   {}
-  Init_Motor_linear_vel right_w(::my_custom_message::msg::Motor::_right_w_type arg)
+  Init_Motor_left_target_w right_w(::my_custom_message::msg::Motor::_right_w_type arg)
   {
     msg_.right_w = std::move(arg);
-    return Init_Motor_linear_vel(msg_);
+    return Init_Motor_left_target_w(msg_);
   }
 
 private:

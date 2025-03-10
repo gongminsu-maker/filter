@@ -5,6 +5,8 @@ from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import Imu
 from geometry_msgs.msg import Pose, Quaternion
+import pandas as pd
+import os
 
 class EKFNode(Node):
     def __init__(self):
@@ -24,22 +26,24 @@ class EKFNode(Node):
 
         # EKF 상태 벡터 [x, y, theta]
         self.x = np.zeros((3, 1))
+        self.z = np.zeros((3,1))
 
         # 상태 공분산 행렬 P (초기값)
         self.P = np.eye(3)
 
         # 프로세스 노이즈 행렬 Q
-        self.Q = np.diag([0.0035, 0.0035, 0.05])
+        self.Q = np.diag([2.0, 2.0, 0.05])
 
         # 측정 모델 행렬 H
         self.H = np.eye(3)  # 단순 위치 및 각도 측정 반영
 
         # 측정 노이즈 행렬 R
-        self.R = np.diag([0.001, 0.001, 0.05])  # x, y, yaw 측정 노이즈
+        self.R = np.diag([0.00025, 0.005, 0.001])  # x, y, yaw 측정 노이즈
 
         # 최신 센서 데이터 저장용 변수
         self.latest_odom = None
         self.latest_imu = None
+        self.log_data = []
 
         # ROS 2 토픽 구독
         self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
@@ -84,7 +88,7 @@ class EKFNode(Node):
         q = msg.orientation
         self.yaw_imu = self.quaternion_to_yaw(q.x, q.y, q.z, q.w)
         #self.get_logger().info(f"Raw Yaw (from IMU): {self.yaw_imu}°")
-        self.get_logger().info(f"ax= {self.a_x}")
+        #self.get_logger().info(f"ax= {self.a_x}")
 
     def ekf_prediction(self):
         """ EKF 예측 단계 """
@@ -93,24 +97,24 @@ class EKFNode(Node):
 
         theta = self.x[2, 0]  # 현재 Yaw (rad)
         delta_s = self.v_enc * self.dt  # 엔코더 기반 이동 거리
-        delta_theta = self.w_enc * self.dt  # 엔코더 기반 각속도 적분
+        self.delta_theta = self.w_enc * self.dt  # 엔코더 기반 각속도 적분
         
         # 상태 전이 행렬 F_k
         F_k = np.array([
-            [1, 0, -delta_s * math.sin(theta + delta_theta / 2)],
-            [0, 1,  delta_s * math.cos(theta + delta_theta / 2)],
+            [1, 0, -delta_s * math.sin(theta + self.delta_theta / 2)],
+            [0, 1,  delta_s * math.cos(theta + self.delta_theta / 2)],
             [0, 0, 1]
         ])
         
         # 입력 행렬 B_k
         B_k = np.array([
-            [math.cos(theta + delta_theta / 2), -0.5 * delta_s * math.sin(theta + delta_theta / 2)],
-            [math.sin(theta + delta_theta / 2),  0.5 * delta_s * math.cos(theta + delta_theta / 2)],
+            [math.cos(theta + self.delta_theta / 2), -0.5 * delta_s * math.sin(theta + self.delta_theta / 2)],
+            [math.sin(theta + self.delta_theta / 2),  0.5 * delta_s * math.cos(theta + self.delta_theta / 2)],
             [0, 1]
         ])
 
         # 입력 벡터 u_k
-        u_k = np.array([[delta_s], [delta_theta]])
+        u_k = np.array([[delta_s], [self.delta_theta]])
 
         # 상태 예측: x_k = F_k * x_k-1 + B_k * u_k
         self.x = F_k @ self.x + B_k @ u_k
@@ -123,10 +127,13 @@ class EKFNode(Node):
     def ekf_update(self):
         """ EKF 보정 단계 """
         Z = np.array([
-            [self.x[0, 0] + self.v_enc * math.cos(self.yaw_imu) * self.dt + 0.5 * self.a_x * self.dt ** 2],
-            [self.x[1, 0] + self.v_enc * math.sin(self.yaw_imu) * self.dt + 0.5 * self.a_y * self.dt ** 2],
+            [self.z[0, 0] + self.v_enc * math.cos(self.delta_theta) * self.dt],#+0.5 * self.a_x * self.dt ** 2],
+            [self.z[1, 0] + self.v_enc * math.sin(self.delta_theta) * self.dt],#+ 0.5 * self.a_y * self.dt ** 2],
             [self.yaw_imu]
         ])
+        self.z[0,0] += self.v_enc * math.cos(self.delta_theta) * self.dt
+        self.z[1, 0] += self.v_enc * math.sin(self.delta_theta) * self.dt
+
          # EKF 업데이트 전 상태 로그
         #self.get_logger().info(f"[EKF Before] x={self.x[0,0]:.4f}, y={self.x[1,0]:.4f}, yaw={math.degrees(self.x[2,0]):.2f}°")
         #self.get_logger().info(f"[EKF Before] yaw_imu (Raw IMU) = {math.degrees(self.yaw_imu):.2f}°")
@@ -144,6 +151,15 @@ class EKFNode(Node):
         #self.get_logger().info(f"[EKF After] x={self.x[0,0]:.4f}, y={self.x[1,0]:.4f}, yaw={math.degrees(self.x[2,0]):.2f}°")
 
         self.publish_corrected_pose()
+    #     self.log_data.append([K])
+    #     self.save_to_excel()
+
+
+    # def save_to_excel(self):
+    #     df = pd.DataFrame(self.log_data, columns=['K'])
+    #     file_path = os.path.join(os.getcwd(), "sensor_fusion_log.xlsx")
+    #     df.to_excel(file_path, index=False, engine='openpyxl')
+    #     print(f"[📂] 데이터 저장 완료: {file_path}")
 
     def publish_corrected_pose(self):
         """ 보정된 Pose 데이터를 발행 """

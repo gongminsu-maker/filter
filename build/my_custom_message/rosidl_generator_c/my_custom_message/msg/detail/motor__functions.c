@@ -19,6 +19,8 @@ my_custom_message__msg__Motor__init(my_custom_message__msg__Motor * msg)
   }
   // left_w
   // right_w
+  // left_target_w
+  // right_target_w
   // linear_vel
   return true;
 }
@@ -31,6 +33,8 @@ my_custom_message__msg__Motor__fini(my_custom_message__msg__Motor * msg)
   }
   // left_w
   // right_w
+  // left_target_w
+  // right_target_w
   // linear_vel
 }
 
@@ -46,6 +50,14 @@ my_custom_message__msg__Motor__are_equal(const my_custom_message__msg__Motor * l
   }
   // right_w
   if (lhs->right_w != rhs->right_w) {
+    return false;
+  }
+  // left_target_w
+  if (lhs->left_target_w != rhs->left_target_w) {
+    return false;
+  }
+  // right_target_w
+  if (lhs->right_target_w != rhs->right_target_w) {
     return false;
   }
   // linear_vel
@@ -67,6 +79,10 @@ my_custom_message__msg__Motor__copy(
   output->left_w = input->left_w;
   // right_w
   output->right_w = input->right_w;
+  // left_target_w
+  output->left_target_w = input->left_target_w;
+  // right_target_w
+  output->right_target_w = input->right_target_w;
   // linear_vel
   output->linear_vel = input->linear_vel;
   return true;

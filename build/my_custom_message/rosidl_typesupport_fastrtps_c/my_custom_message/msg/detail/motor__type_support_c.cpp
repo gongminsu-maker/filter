@@ -59,6 +59,16 @@ static bool _Motor__cdr_serialize(
     cdr << ros_message->right_w;
   }
 
+  // Field name: left_target_w
+  {
+    cdr << ros_message->left_target_w;
+  }
+
+  // Field name: right_target_w
+  {
+    cdr << ros_message->right_target_w;
+  }
+
   // Field name: linear_vel
   {
     cdr << ros_message->linear_vel;
@@ -84,6 +94,16 @@ static bool _Motor__cdr_deserialize(
   // Field name: right_w
   {
     cdr >> ros_message->right_w;
+  }
+
+  // Field name: left_target_w
+  {
+    cdr >> ros_message->left_target_w;
+  }
+
+  // Field name: right_target_w
+  {
+    cdr >> ros_message->right_target_w;
   }
 
   // Field name: linear_vel
@@ -117,6 +137,18 @@ size_t get_serialized_size_my_custom_message__msg__Motor(
   // field.name right_w
   {
     size_t item_size = sizeof(ros_message->right_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_target_w
+  {
+    size_t item_size = sizeof(ros_message->left_target_w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_target_w
+  {
+    size_t item_size = sizeof(ros_message->right_target_w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -164,6 +196,22 @@ size_t max_serialized_size_my_custom_message__msg__Motor(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: right_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_target_w
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_target_w
   {
     size_t array_size = 1;
 

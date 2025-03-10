@@ -22,6 +22,8 @@ typedef struct my_custom_message__msg__Motor
 {
   float left_w;
   float right_w;
+  float left_target_w;
+  float right_target_w;
   float linear_vel;
 } my_custom_message__msg__Motor;
 

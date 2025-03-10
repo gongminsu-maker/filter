@@ -40,6 +40,8 @@ struct Motor_
     {
       this->left_w = 0.0f;
       this->right_w = 0.0f;
+      this->left_target_w = 0.0f;
+      this->right_target_w = 0.0f;
       this->linear_vel = 0.0f;
     }
   }
@@ -52,6 +54,8 @@ struct Motor_
     {
       this->left_w = 0.0f;
       this->right_w = 0.0f;
+      this->left_target_w = 0.0f;
+      this->right_target_w = 0.0f;
       this->linear_vel = 0.0f;
     }
   }
@@ -63,6 +67,12 @@ struct Motor_
   using _right_w_type =
     float;
   _right_w_type right_w;
+  using _left_target_w_type =
+    float;
+  _left_target_w_type left_target_w;
+  using _right_target_w_type =
+    float;
+  _right_target_w_type right_target_w;
   using _linear_vel_type =
     float;
   _linear_vel_type linear_vel;
@@ -78,6 +88,18 @@ struct Motor_
     const float & _arg)
   {
     this->right_w = _arg;
+    return *this;
+  }
+  Type & set__left_target_w(
+    const float & _arg)
+  {
+    this->left_target_w = _arg;
+    return *this;
+  }
+  Type & set__right_target_w(
+    const float & _arg)
+  {
+    this->right_target_w = _arg;
     return *this;
   }
   Type & set__linear_vel(
@@ -133,6 +155,12 @@ struct Motor_
       return false;
     }
     if (this->right_w != other.right_w) {
+      return false;
+    }
+    if (this->left_target_w != other.left_target_w) {
+      return false;
+    }
+    if (this->right_target_w != other.right_target_w) {
       return false;
     }
     if (this->linear_vel != other.linear_vel) {

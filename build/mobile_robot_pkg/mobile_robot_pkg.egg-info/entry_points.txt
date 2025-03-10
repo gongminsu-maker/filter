@@ -1,4 +1,5 @@
 [console_scripts]
+accel = mobile_robot_pkg.accel:main
 cmd = mobile_robot_pkg.cmd:main
 cov = mobile_robot_pkg.cov:main
 cov_3 = mobile_robot_pkg.cov_3:main
@@ -6,5 +7,6 @@ imu_odom = mobile_robot_pkg.imu_odom:main
 kalman_encoder = mobile_robot_pkg.kalman_encoder:main
 kalman_filter = mobile_robot_pkg.kalman_filter:main
 odom = mobile_robot_pkg.odom:main
+squarecontrol = mobile_robot_pkg.squarecontrol:main
 test = mobile_robot_pkg.test:main
 

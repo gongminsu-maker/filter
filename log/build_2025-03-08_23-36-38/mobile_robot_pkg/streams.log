@@ -1,0 +1,33 @@
+[1.448s] Invoking command in '/home/gongminsu/mobile_robot/src/mobile_robot_pkg': PYTHONPATH=/home/gongminsu/mobile_robot/build/mobile_robot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobile_robot_pkg build --build-base /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build install --record /home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log --single-version-externally-managed install_data
+[1.858s] running egg_info
+[1.859s] writing ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/PKG-INFO
+[1.860s] writing dependency_links to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/dependency_links.txt
+[1.860s] writing entry points to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/entry_points.txt
+[1.860s] writing requirements to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/requires.txt
+[1.860s] writing top-level names to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/top_level.txt
+[1.866s] reading manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'
+[1.867s] writing manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'
+[1.867s] running build
+[1.867s] running build_py
+[1.868s] copying mobile_robot_pkg/test.py -> /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg
+[1.868s] running install
+[1.869s] running install_lib
+[1.870s] copying /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build/lib/mobile_robot_pkg/test.py -> /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg
+[1.872s] byte-compiling /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg/test.py to test.cpython-310.pyc
+[1.873s] running install_data
+[1.873s] running install_egg_info
+[1.876s] removing '/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.877s] Copying ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info
+[1.878s] running install_scripts
+[1.904s] Installing accel script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.904s] Installing cmd script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.904s] Installing cov script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.904s] Installing cov_3 script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.904s] Installing imu_odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.904s] Installing kalman_encoder script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.905s] Installing kalman_filter script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.905s] Installing odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.905s] Installing squarecontrol script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.905s] Installing test script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg
+[1.906s] writing list of installed files to '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log'
+[1.967s] Invoked command in '/home/gongminsu/mobile_robot/src/mobile_robot_pkg' returned '0': PYTHONPATH=/home/gongminsu/mobile_robot/build/mobile_robot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobile_robot_pkg build --build-base /home/gongminsu/mobile_robot/build/mobile_robot_pkg/build install --record /home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log --single-version-externally-managed install_data

@@ -68,6 +68,24 @@ bool my_custom_message__msg__motor__convert_from_py(PyObject * _pymsg, void * _r
     ros_message->right_w = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // left_target_w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "left_target_w");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->left_target_w = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // right_target_w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "right_target_w");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->right_target_w = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // linear_vel
     PyObject * field = PyObject_GetAttrString(_pymsg, "linear_vel");
     if (!field) {
@@ -115,6 +133,28 @@ PyObject * my_custom_message__msg__motor__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->right_w);
     {
       int rc = PyObject_SetAttrString(_pymessage, "right_w", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // left_target_w
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->left_target_w);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "left_target_w", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // right_target_w
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->right_target_w);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "right_target_w", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -59,16 +59,22 @@ class Motor(metaclass=Metaclass_Motor):
     __slots__ = [
         '_left_w',
         '_right_w',
+        '_left_target_w',
+        '_right_target_w',
         '_linear_vel',
     ]
 
     _fields_and_field_types = {
         'left_w': 'float',
         'right_w': 'float',
+        'left_target_w': 'float',
+        'right_target_w': 'float',
         'linear_vel': 'float',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -80,6 +86,8 @@ class Motor(metaclass=Metaclass_Motor):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.left_w = kwargs.get('left_w', float())
         self.right_w = kwargs.get('right_w', float())
+        self.left_target_w = kwargs.get('left_target_w', float())
+        self.right_target_w = kwargs.get('right_target_w', float())
         self.linear_vel = kwargs.get('linear_vel', float())
 
     def __repr__(self):
@@ -114,6 +122,10 @@ class Motor(metaclass=Metaclass_Motor):
         if self.left_w != other.left_w:
             return False
         if self.right_w != other.right_w:
+            return False
+        if self.left_target_w != other.left_target_w:
+            return False
+        if self.right_target_w != other.right_target_w:
             return False
         if self.linear_vel != other.linear_vel:
             return False
@@ -153,6 +165,36 @@ class Motor(metaclass=Metaclass_Motor):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'right_w' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._right_w = value
+
+    @builtins.property
+    def left_target_w(self):
+        """Message field 'left_target_w'."""
+        return self._left_target_w
+
+    @left_target_w.setter
+    def left_target_w(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'left_target_w' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'left_target_w' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._left_target_w = value
+
+    @builtins.property
+    def right_target_w(self):
+        """Message field 'right_target_w'."""
+        return self._right_target_w
+
+    @right_target_w.setter
+    def right_target_w(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'right_target_w' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'right_target_w' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._right_target_w = value
 
     @builtins.property
     def linear_vel(self):

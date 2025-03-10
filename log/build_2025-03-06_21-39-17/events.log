@@ -1,0 +1,340 @@
+[0.000000] (-) TimerEvent: {}
+[0.000113] (mobile_robot_pkg) JobQueued: {'identifier': 'mobile_robot_pkg', 'dependencies': OrderedDict()}
+[0.000145] (my_custom_message) JobQueued: {'identifier': 'my_custom_message', 'dependencies': OrderedDict()}
+[0.000165] (mobile_robot_pkg) JobStarted: {'identifier': 'mobile_robot_pkg'}
+[0.010248] (my_custom_message) JobStarted: {'identifier': 'my_custom_message'}
+[0.099237] (-) TimerEvent: {}
+[0.199488] (-) TimerEvent: {}
+[0.299888] (-) TimerEvent: {}
+[0.384517] (my_custom_message) JobProgress: {'identifier': 'my_custom_message', 'progress': 'cmake'}
+[0.386074] (my_custom_message) JobProgress: {'identifier': 'my_custom_message', 'progress': 'build'}
+[0.386125] (my_custom_message) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/gongminsu/mobile_robot/build/my_custom_message', '--', '-j8', '-l8'], 'cwd': '/home/gongminsu/mobile_robot/build/my_custom_message', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'gongminsu'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/gongminsu'), ('OLDPWD', '/home/gongminsu/microros_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1526'), ('SYSTEMD_EXEC_PID', '1723'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '21925'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/gongminsu/mobile_robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'gongminsu'), ('JOURNAL_STREAM', '8:12112'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'gongminsu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/gongminsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gongminsu/.local/bin'), ('SESSION_MANAGER', 'local/gongminsu-950XCJ-951XCJ-950XCR:@/tmp/.ICE-unix/1694,unix/gongminsu-950XCJ-951XCJ-950XCR:/tmp/.ICE-unix/1694'), ('INVOCATION_ID', 'b1331a47231e41f387552af88ded8e21'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.12QO22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:d5a569a6-182e-4564-9988-d25233b9c589'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/gongminsu/mobile_robot/build/my_custom_message'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble')]), 'shell': False}
+[0.399958] (-) TimerEvent: {}
+[0.434044] (my_custom_message) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500053] (-) TimerEvent: {}
+[0.600330] (-) TimerEvent: {}
+[0.633654] (my_custom_message) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.700474] (-) TimerEvent: {}
+[0.723037] (my_custom_message) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.727619] (my_custom_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.734234] (my_custom_message) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.783701] (my_custom_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800613] (-) TimerEvent: {}
+[0.900943] (-) TimerEvent: {}
+[1.001276] (-) TimerEvent: {}
+[1.008217] (mobile_robot_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mobile_robot_pkg', 'build', '--build-base', '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/build', 'install', '--record', '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/gongminsu/mobile_robot/src/mobile_robot_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'gongminsu', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gongminsu/mobile_robot/install/my_custom_message/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/gongminsu', 'OLDPWD': '/home/gongminsu/microros_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1526', 'SYSTEMD_EXEC_PID': '1723', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '21925', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/gongminsu/mobile_robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'gongminsu', 'JOURNAL_STREAM': '8:12112', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'gongminsu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/gongminsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gongminsu/.local/bin', 'SESSION_MANAGER': 'local/gongminsu-950XCJ-951XCJ-950XCR:@/tmp/.ICE-unix/1694,unix/gongminsu-950XCJ-951XCJ-950XCR:/tmp/.ICE-unix/1694', 'INVOCATION_ID': 'b1331a47231e41f387552af88ded8e21', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.12QO22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:d5a569a6-182e-4564-9988-d25233b9c589', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gongminsu/mobile_robot/build/mobile_robot_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg'}, 'shell': False}
+[1.101372] (-) TimerEvent: {}
+[1.134745] (my_custom_message) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.201470] (-) TimerEvent: {}
+[1.301806] (-) TimerEvent: {}
+[1.369814] (mobile_robot_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.370904] (mobile_robot_pkg) StdoutLine: {'line': b'writing ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/PKG-INFO\n'}
+[1.371293] (mobile_robot_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/dependency_links.txt\n'}
+[1.371516] (mobile_robot_pkg) StdoutLine: {'line': b'writing entry points to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/entry_points.txt\n'}
+[1.371765] (mobile_robot_pkg) StdoutLine: {'line': b'writing requirements to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/requires.txt\n'}
+[1.372107] (mobile_robot_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/top_level.txt\n'}
+[1.379223] (mobile_robot_pkg) StdoutLine: {'line': b"reading manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'\n"}
+[1.380512] (mobile_robot_pkg) StdoutLine: {'line': b"writing manifest file '../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info/SOURCES.txt'\n"}
+[1.381004] (mobile_robot_pkg) StdoutLine: {'line': b'running build\n'}
+[1.381085] (mobile_robot_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.381459] (mobile_robot_pkg) StdoutLine: {'line': b'running install\n'}
+[1.381806] (mobile_robot_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.383445] (mobile_robot_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.383652] (mobile_robot_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.385831] (mobile_robot_pkg) StdoutLine: {'line': b"removing '/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.386143] (mobile_robot_pkg) StdoutLine: {'line': b'Copying ../../build/mobile_robot_pkg/mobile_robot_pkg.egg-info to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages/mobile_robot_pkg-0.0.0-py3.10.egg-info\n'}
+[1.387026] (mobile_robot_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.390165] (my_custom_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401965] (-) TimerEvent: {}
+[1.418028] (mobile_robot_pkg) StdoutLine: {'line': b'Installing accel script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.418322] (mobile_robot_pkg) StdoutLine: {'line': b'Installing cmd script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.418504] (mobile_robot_pkg) StdoutLine: {'line': b'Installing cov script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.418658] (mobile_robot_pkg) StdoutLine: {'line': b'Installing cov_3 script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.418792] (mobile_robot_pkg) StdoutLine: {'line': b'Installing imu_odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.418944] (mobile_robot_pkg) StdoutLine: {'line': b'Installing kalman_encoder script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.419080] (mobile_robot_pkg) StdoutLine: {'line': b'Installing kalman_filter script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.419184] (mobile_robot_pkg) StdoutLine: {'line': b'Installing odom script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.419284] (mobile_robot_pkg) StdoutLine: {'line': b'Installing test script to /home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/mobile_robot_pkg\n'}
+[1.419472] (mobile_robot_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/gongminsu/mobile_robot/build/mobile_robot_pkg/install.log'\n"}
+[1.496008] (mobile_robot_pkg) CommandEnded: {'returncode': 0}
+[1.502179] (-) TimerEvent: {}
+[1.541669] (mobile_robot_pkg) JobEnded: {'identifier': 'mobile_robot_pkg', 'rc': 0}
+[1.602419] (-) TimerEvent: {}
+[1.703026] (-) TimerEvent: {}
+[1.803749] (-) TimerEvent: {}
+[1.904644] (-) TimerEvent: {}
+[2.000495] (my_custom_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.004789] (-) TimerEvent: {}
+[2.059689] (my_custom_message) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.105040] (-) TimerEvent: {}
+[2.121575] (my_custom_message) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.122204] (my_custom_message) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.122366] (my_custom_message) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.165879] (my_custom_message) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.168595] (my_custom_message) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.179065] (my_custom_message) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.205379] (-) TimerEvent: {}
+[2.256113] (my_custom_message) StdoutLine: {'line': b'-- Generating done\n'}
+[2.280981] (my_custom_message) StdoutLine: {'line': b'-- Build files have been written to: /home/gongminsu/mobile_robot/build/my_custom_message\n'}
+[2.305688] (-) TimerEvent: {}
+[2.338117] (my_custom_message) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.358848] (my_custom_message) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.382987] (my_custom_message) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_my_custom_message\n'}
+[2.407424] (-) TimerEvent: {}
+[2.511724] (-) TimerEvent: {}
+[2.612242] (-) TimerEvent: {}
+[2.712628] (-) TimerEvent: {}
+[2.813242] (-) TimerEvent: {}
+[2.913671] (-) TimerEvent: {}
+[2.996292] (my_custom_message) StdoutLine: {'line': b'[  6%] Built target my_custom_message__cpp\n'}
+[3.014011] (-) TimerEvent: {}
+[3.017099] (my_custom_message) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.017678] (my_custom_message) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.020824] (my_custom_message) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.045138] (my_custom_message) StdoutLine: {'line': b'running egg_info\n'}
+[3.047256] (my_custom_message) StdoutLine: {'line': b'writing my_custom_message.egg-info/PKG-INFO\n'}
+[3.049809] (my_custom_message) StdoutLine: {'line': b'writing dependency_links to my_custom_message.egg-info/dependency_links.txt\n'}
+[3.050194] (my_custom_message) StdoutLine: {'line': b'writing top-level names to my_custom_message.egg-info/top_level.txt\n'}
+[3.060973] (my_custom_message) StdoutLine: {'line': b"reading manifest file 'my_custom_message.egg-info/SOURCES.txt'\n"}
+[3.061501] (my_custom_message) StdoutLine: {'line': b"writing manifest file 'my_custom_message.egg-info/SOURCES.txt'\n"}
+[3.097128] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_generator_c\x1b[0m\n'}
+[3.114112] (-) TimerEvent: {}
+[3.133223] (my_custom_message) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_generator_c.dir/rosidl_generator_c/my_custom_message/msg/detail/motor__functions.c.o\x1b[0m\n'}
+[3.172576] (my_custom_message) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_my_custom_message_egg\n'}
+[3.214207] (-) TimerEvent: {}
+[3.294036] (my_custom_message) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libmy_custom_message__rosidl_generator_c.so\x1b[0m\n'}
+[3.314318] (-) TimerEvent: {}
+[3.354288] (my_custom_message) StdoutLine: {'line': b'[ 22%] Built target my_custom_message__rosidl_generator_c\n'}
+[3.373644] (my_custom_message) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.374448] (my_custom_message) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.374767] (my_custom_message) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.414519] (-) TimerEvent: {}
+[3.516376] (-) TimerEvent: {}
+[3.563270] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.578325] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.600090] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.600387] (my_custom_message) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_message__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_message/msg/motor__type_support.cpp.o\x1b[0m\n'}
+[3.609127] (my_custom_message) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_message__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_message/msg/detail/dds_fastrtps/motor__type_support.cpp.o\x1b[0m\n'}
+[3.616468] (-) TimerEvent: {}
+[3.622606] (my_custom_message) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_message__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_message/msg/detail/motor__type_support.cpp.o\x1b[0m\n'}
+[3.716945] (-) TimerEvent: {}
+[3.818498] (-) TimerEvent: {}
+[3.922059] (-) TimerEvent: {}
+[4.018862] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_c\x1b[0m\n'}
+[4.022392] (-) TimerEvent: {}
+[4.059988] (my_custom_message) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_message__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_message/msg/motor__type_support.cpp.o\x1b[0m\n'}
+[4.060391] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.093991] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.101296] (my_custom_message) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_message/msg/detail/motor__type_support.c.o\x1b[0m\n'}
+[4.122530] (-) TimerEvent: {}
+[4.126077] (my_custom_message) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_message__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_message/msg/detail/motor__type_support_c.cpp.o\x1b[0m\n'}
+[4.207993] (my_custom_message) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_message__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.222866] (-) TimerEvent: {}
+[4.253072] (my_custom_message) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libmy_custom_message__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.322976] (-) TimerEvent: {}
+[4.323745] (my_custom_message) StdoutLine: {'line': b'[ 58%] Built target my_custom_message__rosidl_typesupport_introspection_c\n'}
+[4.386540] (my_custom_message) StdoutLine: {'line': b'[ 58%] Built target my_custom_message__rosidl_typesupport_c\n'}
+[4.423307] (-) TimerEvent: {}
+[4.534044] (-) TimerEvent: {}
+[4.574031] (my_custom_message) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_message__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.637040] (-) TimerEvent: {}
+[4.699701] (my_custom_message) StdoutLine: {'line': b'[ 61%] Built target my_custom_message__rosidl_typesupport_cpp\n'}
+[4.739012] (-) TimerEvent: {}
+[4.839640] (-) TimerEvent: {}
+[4.936037] (my_custom_message) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_message__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.940320] (-) TimerEvent: {}
+[4.990450] (my_custom_message) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_message__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.040453] (-) TimerEvent: {}
+[5.060487] (my_custom_message) StdoutLine: {'line': b'[ 67%] Built target my_custom_message__rosidl_typesupport_introspection_cpp\n'}
+[5.142148] (-) TimerEvent: {}
+[5.248900] (-) TimerEvent: {}
+[5.302294] (my_custom_message) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_message__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.337064] (my_custom_message) StdoutLine: {'line': b'[ 70%] Built target my_custom_message__rosidl_typesupport_fastrtps_cpp\n'}
+[5.348979] (-) TimerEvent: {}
+[5.449504] (-) TimerEvent: {}
+[5.550293] (-) TimerEvent: {}
+[5.652431] (-) TimerEvent: {}
+[5.738795] (my_custom_message) StdoutLine: {'line': b'[ 70%] Built target my_custom_message__rosidl_typesupport_fastrtps_c\n'}
+[5.752758] (-) TimerEvent: {}
+[5.797050] (my_custom_message) StdoutLine: {'line': b'[ 70%] Built target my_custom_message\n'}
+[5.847126] (my_custom_message) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.852941] (-) TimerEvent: {}
+[5.953585] (-) TimerEvent: {}
+[6.054341] (-) TimerEvent: {}
+[6.157217] (-) TimerEvent: {}
+[6.258456] (-) TimerEvent: {}
+[6.358972] (-) TimerEvent: {}
+[6.459509] (-) TimerEvent: {}
+[6.560302] (-) TimerEvent: {}
+[6.660739] (-) TimerEvent: {}
+[6.750903] (my_custom_message) StdoutLine: {'line': b'[ 74%] Built target my_custom_message__py\n'}
+[6.760864] (-) TimerEvent: {}
+[6.765294] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_generator_py\x1b[0m\n'}
+[6.786294] (my_custom_message) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_generator_py.dir/rosidl_generator_py/my_custom_message/msg/_motor_s.c.o\x1b[0m\n'}
+[6.861630] (-) TimerEvent: {}
+[6.962453] (-) TimerEvent: {}
+[7.063921] (-) TimerEvent: {}
+[7.075654] (my_custom_message) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_message/libmy_custom_message__rosidl_generator_py.so\x1b[0m\n'}
+[7.164037] (-) TimerEvent: {}
+[7.221462] (my_custom_message) StdoutLine: {'line': b'[ 80%] Built target my_custom_message__rosidl_generator_py\n'}
+[7.270128] (-) TimerEvent: {}
+[7.276162] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.277837] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.284793] (my_custom_message) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_custom_message__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.310440] (my_custom_message) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.316477] (my_custom_message) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.352689] (my_custom_message) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_custom_message__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.370309] (-) TimerEvent: {}
+[7.472337] (-) TimerEvent: {}
+[7.572967] (-) TimerEvent: {}
+[7.631229] (my_custom_message) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.648484] (my_custom_message) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.681984] (-) TimerEvent: {}
+[7.738201] (my_custom_message) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.782140] (-) TimerEvent: {}
+[7.806113] (my_custom_message) StdoutLine: {'line': b'[100%] Built target my_custom_message__rosidl_typesupport_introspection_c__pyext\n'}
+[7.816831] (my_custom_message) StdoutLine: {'line': b'[100%] Built target my_custom_message__rosidl_typesupport_c__pyext\n'}
+[7.882317] (-) TimerEvent: {}
+[7.890329] (my_custom_message) StdoutLine: {'line': b'[100%] Built target my_custom_message__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.925832] (my_custom_message) CommandEnded: {'returncode': 0}
+[7.933186] (my_custom_message) JobProgress: {'identifier': 'my_custom_message', 'progress': 'install'}
+[7.952257] (my_custom_message) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/gongminsu/mobile_robot/build/my_custom_message'], 'cwd': '/home/gongminsu/mobile_robot/build/my_custom_message', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'gongminsu'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/gongminsu'), ('OLDPWD', '/home/gongminsu/microros_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1526'), ('SYSTEMD_EXEC_PID', '1723'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '21925'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/gongminsu/mobile_robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'gongminsu'), ('JOURNAL_STREAM', '8:12112'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'gongminsu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/gongminsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gongminsu/.local/bin'), ('SESSION_MANAGER', 'local/gongminsu-950XCJ-951XCJ-950XCR:@/tmp/.ICE-unix/1694,unix/gongminsu-950XCJ-951XCJ-950XCR:/tmp/.ICE-unix/1694'), ('INVOCATION_ID', 'b1331a47231e41f387552af88ded8e21'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.12QO22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:d5a569a6-182e-4564-9988-d25233b9c589'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/gongminsu/mobile_robot/build/my_custom_message'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages:/home/gongminsu/mobile_robot/install/mobile_robot_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/gongminsu/mobile_robot/install/my_custom_message:/home/gongminsu/mobile_robot/install/mobile_robot_pkg_msg:/home/gongminsu/mobile_robot/install/mobile_robot_pkg:/opt/ros/humble')]), 'shell': False}
+[7.974775] (my_custom_message) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.975851] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/rosidl_interfaces/my_custom_message\n'}
+[7.976407] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.976842] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.980279] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.980743] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__struct.h\n'}
+[7.980984] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.h\n'}
+[7.981243] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__functions.c\n'}
+[7.981370] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__functions.h\n'}
+[7.981485] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/motor.h\n'}
+[7.981608] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.981742] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/library_path.sh\n'}
+[7.981858] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/library_path.dsv\n'}
+[7.982009] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_c.so\n'}
+[7.982396] (-) TimerEvent: {}
+[7.985222] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_c.so" to ""\n'}
+[7.985860] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.986213] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.986388] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.986546] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_fastrtps_c.h\n'}
+[7.987828] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.988204] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_c.so\n'}
+[7.988407] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.988558] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.988739] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.988955] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.989127] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.c\n'}
+[7.989273] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_introspection_c.h\n'}
+[7.993311] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.993714] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_c.so\n'}
+[7.993921] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.994108] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_c.so\n'}
+[7.994253] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_c.so" to ""\n'}
+[7.994399] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.994542] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.994710] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.994855] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__struct.hpp\n'}
+[7.995176] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.hpp\n'}
+[7.995333] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__builder.hpp\n'}
+[7.995490] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__traits.hpp\n'}
+[7.995641] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/motor.hpp\n'}
+[7.995792] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.995970] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.996146] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.996286] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.996428] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/dds_fastrtps\n'}
+[7.996576] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.996746] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.996915] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.997087] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.997260] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message\n'}
+[7.997408] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg\n'}
+[7.997562] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail\n'}
+[7.997690] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__type_support.cpp\n'}
+[7.997822] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/include/my_custom_message/my_custom_message/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.998122] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_cpp.so\n'}
+[7.998278] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.998527] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_cpp.so\n'}
+[7.999317] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_typesupport_cpp.so" to ""\n'}
+[8.001285] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/pythonpath.sh\n'}
+[8.001956] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/pythonpath.dsv\n'}
+[8.002270] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info\n'}
+[8.002502] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.002661] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.002859] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.003046] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.003200] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message\n'}
+[8.003351] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.003500] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.003667] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/libmy_custom_message__rosidl_generator_py.so\n'}
+[8.003804] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.004125] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/__init__.py\n'}
+[8.004294] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.004450] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_c.c\n'}
+[8.004590] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg\n'}
+[8.004724] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/_motor.py\n'}
+[8.004897] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/__init__.py\n'}
+[8.005073] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/_motor_s.c\n'}
+[8.005223] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.082607] (-) TimerEvent: {}
+[8.170031] (my_custom_message) StdoutLine: {'line': b"Listing '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message'...\n"}
+[8.170442] (my_custom_message) StdoutLine: {'line': b"Compiling '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/__init__.py'...\n"}
+[8.170628] (my_custom_message) StdoutLine: {'line': b"Listing '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg'...\n"}
+[8.170762] (my_custom_message) StdoutLine: {'line': b"Compiling '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/__init__.py'...\n"}
+[8.170926] (my_custom_message) StdoutLine: {'line': b"Compiling '/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/msg/_motor.py'...\n"}
+[8.182807] (-) TimerEvent: {}
+[8.192155] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.194443] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.198727] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.199230] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.199447] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.199681] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/local/lib/python3.10/dist-packages/my_custom_message/my_custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.199864] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_py.so\n'}
+[8.206707] (my_custom_message) StdoutLine: {'line': b'-- Set runtime path of "/home/gongminsu/mobile_robot/install/my_custom_message/lib/libmy_custom_message__rosidl_generator_py.so" to ""\n'}
+[8.209471] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/msg/Motor.idl\n'}
+[8.209770] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/msg/Motor.msg\n'}
+[8.209969] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/package_run_dependencies/my_custom_message\n'}
+[8.210161] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/parent_prefix_path/my_custom_message\n'}
+[8.210330] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/ament_prefix_path.sh\n'}
+[8.213049] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/ament_prefix_path.dsv\n'}
+[8.213434] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/path.sh\n'}
+[8.214728] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/environment/path.dsv\n'}
+[8.215108] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.bash\n'}
+[8.215336] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.sh\n'}
+[8.215549] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.zsh\n'}
+[8.215747] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/local_setup.dsv\n'}
+[8.215956] (my_custom_message) StdoutLine: {'line': b'-- Installing: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/package.dsv\n'}
+[8.216147] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/ament_index/resource_index/packages/my_custom_message\n'}
+[8.216339] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cExport.cmake\n'}
+[8.216523] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.216733] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.216963] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.217185] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.217371] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.217564] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cExport.cmake\n'}
+[8.217789] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.223556] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_cppExport.cmake\n'}
+[8.224193] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.224454] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.226160] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.226448] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.226656] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cppExport.cmake\n'}
+[8.226860] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_message__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.227095] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_pyExport.cmake\n'}
+[8.227328] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/export_my_custom_message__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.227521] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake-extras.cmake\n'}
+[8.227721] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.227983] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.230685] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.231000] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.231224] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.231423] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.233709] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_messageConfig.cmake\n'}
+[8.233990] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/cmake/my_custom_messageConfig-version.cmake\n'}
+[8.234223] (my_custom_message) StdoutLine: {'line': b'-- Up-to-date: /home/gongminsu/mobile_robot/install/my_custom_message/share/my_custom_message/package.xml\n'}
+[8.234446] (my_custom_message) CommandEnded: {'returncode': 0}
+[8.283589] (-) TimerEvent: {}
+[8.302706] (my_custom_message) JobEnded: {'identifier': 'my_custom_message', 'rc': 0}
+[8.305642] (-) EventReactorShutdown: {}

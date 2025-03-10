@@ -31,6 +31,8 @@ setup(
             "imu_odom=mobile_robot_pkg.imu_odom:main",
             "kalman_filter=mobile_robot_pkg.kalman_filter:main",
             "test=mobile_robot_pkg.test:main",
+            "accel=mobile_robot_pkg.accel:main",
+            "squarecontrol = mobile_robot_pkg.squarecontrol:main",
 
         ],
     },
