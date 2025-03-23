@@ -6,6 +6,7 @@ cov_3 = mobile_robot_pkg.cov_3:main
 imu_odom = mobile_robot_pkg.imu_odom:main
 kalman_encoder = mobile_robot_pkg.kalman_encoder:main
 kalman_filter = mobile_robot_pkg.kalman_filter:main
+kalman_filter_yaw = mobile_robot_pkg.kalman_filter_yaw:main
 odom = mobile_robot_pkg.odom:main
 squarecontrol = mobile_robot_pkg.squarecontrol:main
 test = mobile_robot_pkg.test:main

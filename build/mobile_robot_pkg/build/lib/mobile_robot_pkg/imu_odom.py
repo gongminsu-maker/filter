@@ -47,7 +47,7 @@ class ImuOdometry(Node):
         z = round(msg.orientation.z,6)
         w = round(msg.orientation.w,6)
         q = self.quaternion_to_yaw(x,y,z,w)
-        self.log_data.append(q)
+        self.log_data.append(q) # rad/s단위
 
     # 속도 업데이트 (가속도를 적분)
         self.vx += accel_x * dt

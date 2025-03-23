@@ -30,6 +30,7 @@ setup(
             "cov_3=mobile_robot_pkg.cov_3:main",
             "imu_odom=mobile_robot_pkg.imu_odom:main",
             "kalman_filter=mobile_robot_pkg.kalman_filter:main",
+            "kalman_filter_yaw=mobile_robot_pkg.kalman_filter_yaw:main",
             "test=mobile_robot_pkg.test:main",
             "accel=mobile_robot_pkg.accel:main",
             "squarecontrol = mobile_robot_pkg.squarecontrol:main",
