@@ -1,6 +1,7 @@
 {
   "package_name": "my_custom_message",
   "non_idl_tuples": [
-    "/home/gongminsu/mobile_robot/src/my_custom_message:msg/Motor.msg"
+    "/home/gongminsu/mobile_robot/src/my_custom_message:msg/Motor.msg",
+    "/home/gongminsu/mobile_robot/src/my_custom_message:msg/Visual.msg"
   ]
 }

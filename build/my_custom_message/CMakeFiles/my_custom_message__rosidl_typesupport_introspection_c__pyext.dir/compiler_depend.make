@@ -245,8 +245,13 @@ CMakeFiles/my_custom_message__rosidl_typesupport_introspection_c__pyext.dir/rosi
   rosidl_generator_c/my_custom_message/msg/detail/motor__type_support.h \
   rosidl_generator_c/my_custom_message/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/my_custom_message/msg/detail/motor__struct.h \
-  rosidl_generator_c/my_custom_message/msg/detail/motor__functions.h
+  rosidl_generator_c/my_custom_message/msg/detail/motor__functions.h \
+  rosidl_generator_c/my_custom_message/msg/detail/visual__type_support.h \
+  rosidl_generator_c/my_custom_message/msg/detail/visual__struct.h \
+  rosidl_generator_c/my_custom_message/msg/detail/visual__functions.h
 
+
+rosidl_generator_c/my_custom_message/msg/detail/visual__type_support.h:
 
 rosidl_generator_c/my_custom_message/msg/rosidl_generator_c__visibility_control.h:
 
@@ -328,6 +333,8 @@ rosidl_generator_c/my_custom_message/msg/detail/motor__struct.h:
 
 /usr/include/python3.10/dictobject.h:
 
+rosidl_generator_c/my_custom_message/msg/detail/visual__functions.h:
+
 /usr/include/python3.10/cpython/listobject.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
@@ -345,6 +352,8 @@ rosidl_generator_c/my_custom_message/msg/detail/motor__struct.h:
 /usr/include/python3.10/complexobject.h:
 
 /usr/include/python3.10/floatobject.h:
+
+rosidl_generator_c/my_custom_message/msg/detail/visual__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 

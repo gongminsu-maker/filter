@@ -24,7 +24,8 @@ if(BUILD_TESTING)
 endif()
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME} 
-  "msg/Motor.msg" #띄어쓰기 주의, 새로 추가되면 바로바로 업데이트 해줘야하는 부분이다.
+  "msg/Motor.msg"
+  "msg/Visual.msg" #띄어쓰기 주의, 새로 추가되면 바로바로 업데이트 해줘야하는 부분이다.
 )
 
 ament_package()

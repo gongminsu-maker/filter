@@ -67,6 +67,7 @@ include CMakeFiles/my_custom_message.dir/compiler_depend.make
 include CMakeFiles/my_custom_message.dir/progress.make
 
 CMakeFiles/my_custom_message: /home/gongminsu/mobile_robot/src/my_custom_message/msg/Motor.msg
+CMakeFiles/my_custom_message: /home/gongminsu/mobile_robot/src/my_custom_message/msg/Visual.msg
 
 my_custom_message: CMakeFiles/my_custom_message
 my_custom_message: CMakeFiles/my_custom_message.dir/build.make

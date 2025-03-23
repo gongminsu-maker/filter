@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_custom_message/msg/Visual.msg
+// generated code does not contain a copyright notice
+
+
+module my_custom_message {
+  module msg {
+    struct Visual {
+      float yaw_odom;
+
+      float yaw_imu;
+
+      float yaw_filter;
+    };
+  };
+};

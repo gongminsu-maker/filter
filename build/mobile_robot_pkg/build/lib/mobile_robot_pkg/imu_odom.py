@@ -42,8 +42,12 @@ class ImuOdometry(Node):
     # IMU 센서 값 가져오기
         accel_x = msg.linear_acceleration.x
         accel_y = msg.linear_acceleration.y
-
-        q = self.quaternion_to_yaw(msg.orientation.x,msg.orientation.y,msg.orientation.z,msg.orientation.w)
+        x = round(msg.orientation.x,6)
+        y = round(msg.orientation.y,6)
+        z = round(msg.orientation.z,6)
+        w = round(msg.orientation.w,6)
+        q = self.quaternion_to_yaw(x,y,z,w)
+        self.log_data.append(q)
 
     # 속도 업데이트 (가속도를 적분)
         self.vx += accel_x * dt
@@ -53,6 +57,7 @@ class ImuOdometry(Node):
         self.x += self.vx * dt
         self.y += self.vy * dt
         self.theta = q
+        self.get_logger().info(f"theta{self.theta*57.295779513082320876798154814105}°")
 
 
 
@@ -72,18 +77,13 @@ class ImuOdometry(Node):
 
     # 메시지 발행
         self.odom_pub.publish(odom_msg)
-        self.get_logger().info(f"{self.x}, {self.y}, {math.degrees(self.theta)}")
-        self.log_data.append([self.x , self.y, math.degrees(self.theta), self.vx, self.vy, self.omega])
-        self.save_to_excel()
 
 
     def save_to_excel(self):
-        df = pd.DataFrame(self.log_data, columns=["x", "y", "theta", "vx", "vy", "w"])
+        df = pd.DataFrame(self.log_data, columns=["z"])
         file_path = os.path.join(os.getcwd(), "sensor_fusion_log.xlsx")
         df.to_excel(file_path, index=False, engine='openpyxl')
         print(f"[📂] 데이터 저장 완료: {file_path}")
-
-        self.get_logger().info(f"IMU Odometry Updated: x={self.x:.3f}, y={self.y:.3f}, theta={math.degrees(self.theta):.1f}°")
     def quaternion_to_yaw(self,x,y,z,w):
         yaw = -math.atan2(2*(x*y-w*z),2*(w*w+x*x)-1)
         return yaw
@@ -92,9 +92,14 @@ class ImuOdometry(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = ImuOdometry()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.save_to_excel()
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

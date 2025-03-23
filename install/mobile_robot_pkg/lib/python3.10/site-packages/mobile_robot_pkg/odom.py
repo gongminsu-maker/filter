@@ -5,9 +5,12 @@ from geometry_msgs.msg import Quaternion
 from my_custom_message.msg import Motor
 import math
 import numpy as np
+import pandas as pd
+import os
 class DiffDriveOdometry(Node):
     def __init__(self):
         super().__init__('diff_drive_odometry')
+        self.log_data = []
         
         # 로봇 파라미터
         self.wheel_diameter = 0.0875  # 87.5mm -> m 단위 변환
@@ -86,6 +89,8 @@ class DiffDriveOdometry(Node):
         self.theta += delta_theta
            # Yaw 값 범위 조정 ([-π, π])
         self.theta = self.normalize_angle(self.theta)
+        self.log_data.append([current_time.nanoseconds/1e9,self.theta*57.295779513082320876798154814105])
+        
         
         # Quaternion 변환
         q = self.quaternion_from_euler(0,0,self.theta)
@@ -108,14 +113,24 @@ class DiffDriveOdometry(Node):
         self.odom_pub.publish(odom_msg)
         
         self.get_logger().info(f"Odometry Updated: x={self.x:.3f}, y={self.y:.3f}, theta={math.degrees(self.theta):.1f}°")
+    def save_to_excel(self):
+        df = pd.DataFrame(self.log_data, columns=["time","yaw"])
+        file_path = os.path.join(os.getcwd(), "odom_theta.xlsx")
+        df.to_excel(file_path, index=False, engine='openpyxl')
+        print(f"[📂] 데이터 저장 완료: {file_path}")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = DiffDriveOdometry()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.save_to_excel()
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

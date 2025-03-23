@@ -3,7 +3,8 @@
   "output_dir": "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message:msg/Motor.idl"
+    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message:msg/Motor.idl",
+    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message:msg/Visual.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +22,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message/msg/Motor.idl"
+    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message/msg/Motor.idl",
+    "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_adapter/my_custom_message/msg/Visual.idl"
   ]
 }

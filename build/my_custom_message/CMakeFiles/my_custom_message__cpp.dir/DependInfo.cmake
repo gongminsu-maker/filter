@@ -16,6 +16,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/motor__struct.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/motor__traits.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/motor__type_support.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/visual__builder.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/visual__struct.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/visual__traits.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/detail/visual__type_support.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/visual.hpp" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp/my_custom_message/msg/motor.hpp"
   )
 
 

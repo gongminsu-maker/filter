@@ -70,8 +70,10 @@ my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_c
 my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_introspection_c.c
 my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_c.c
 my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_motor.py
+my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_visual.py
 my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/msg/__init__.py
 my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_motor_s.c
+my_custom_message__py/CMakeFiles/my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_visual_s.c
 
 rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +89,7 @@ rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport
 rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_custom_message/msg/Motor.idl
+rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_custom_message/msg/Visual.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gongminsu/mobile_robot/build/my_custom_message/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/gongminsu/mobile_robot/build/my_custom_message/my_custom_message__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -99,11 +102,17 @@ rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport
 rosidl_generator_py/my_custom_message/msg/_motor.py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_custom_message/msg/_motor.py
 
+rosidl_generator_py/my_custom_message/msg/_visual.py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_custom_message/msg/_visual.py
+
 rosidl_generator_py/my_custom_message/msg/__init__.py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_custom_message/msg/__init__.py
 
 rosidl_generator_py/my_custom_message/msg/_motor_s.c: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_custom_message/msg/_motor_s.c
+
+rosidl_generator_py/my_custom_message/msg/_visual_s.c: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_custom_message/msg/_visual_s.c
 
 my_custom_message__py: my_custom_message__py/CMakeFiles/my_custom_message__py
 my_custom_message__py: rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_c.c
@@ -112,6 +121,8 @@ my_custom_message__py: rosidl_generator_py/my_custom_message/_my_custom_message_
 my_custom_message__py: rosidl_generator_py/my_custom_message/msg/__init__.py
 my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_motor.py
 my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_motor_s.c
+my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_visual.py
+my_custom_message__py: rosidl_generator_py/my_custom_message/msg/_visual_s.c
 my_custom_message__py: my_custom_message__py/CMakeFiles/my_custom_message__py.dir/build.make
 .PHONY : my_custom_message__py
 

@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/msg/__init__.py" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/msg/_motor.py" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/msg/_motor_s.c" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/msg/_visual.py" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/msg/_visual_s.c" "/home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_py/my_custom_message/_my_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

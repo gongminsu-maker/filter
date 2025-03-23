@@ -71,6 +71,11 @@ CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/de
 CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__struct.hpp
 CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__traits.hpp
 CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__type_support.hpp
+CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/visual.hpp
+CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__builder.hpp
+CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__struct.hpp
+CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__traits.hpp
+CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__type_support.hpp
 CMakeFiles/my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/my_custom_message/msg/motor.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -89,6 +94,7 @@ rosidl_generator_cpp/my_custom_message/msg/motor.hpp: /opt/ros/humble/share/rosi
 rosidl_generator_cpp/my_custom_message/msg/motor.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/my_custom_message/msg/motor.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/my_custom_message/msg/motor.hpp: rosidl_adapter/my_custom_message/msg/Motor.idl
+rosidl_generator_cpp/my_custom_message/msg/motor.hpp: rosidl_adapter/my_custom_message/msg/Visual.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gongminsu/mobile_robot/build/my_custom_message/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/gongminsu/mobile_robot/build/my_custom_message/rosidl_generator_cpp__arguments.json
 
@@ -104,12 +110,32 @@ rosidl_generator_cpp/my_custom_message/msg/detail/motor__traits.hpp: rosidl_gene
 rosidl_generator_cpp/my_custom_message/msg/detail/motor__type_support.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/detail/motor__type_support.hpp
 
+rosidl_generator_cpp/my_custom_message/msg/visual.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/visual.hpp
+
+rosidl_generator_cpp/my_custom_message/msg/detail/visual__builder.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/detail/visual__builder.hpp
+
+rosidl_generator_cpp/my_custom_message/msg/detail/visual__struct.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/detail/visual__struct.hpp
+
+rosidl_generator_cpp/my_custom_message/msg/detail/visual__traits.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/detail/visual__traits.hpp
+
+rosidl_generator_cpp/my_custom_message/msg/detail/visual__type_support.hpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_custom_message/msg/detail/visual__type_support.hpp
+
 my_custom_message__cpp: CMakeFiles/my_custom_message__cpp
 my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__builder.hpp
 my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__struct.hpp
 my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__traits.hpp
 my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/motor__type_support.hpp
+my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__builder.hpp
+my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__struct.hpp
+my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__traits.hpp
+my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/detail/visual__type_support.hpp
 my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/motor.hpp
+my_custom_message__cpp: rosidl_generator_cpp/my_custom_message/msg/visual.hpp
 my_custom_message__cpp: CMakeFiles/my_custom_message__cpp.dir/build.make
 .PHONY : my_custom_message__cpp
 

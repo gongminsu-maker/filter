@@ -1,2 +1,4 @@
 msg/Motor.idl
 msg/Motor.msg
+msg/Visual.idl
+msg/Visual.msg

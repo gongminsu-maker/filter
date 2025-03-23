@@ -5,6 +5,8 @@ from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import Imu
 from geometry_msgs.msg import Pose, Quaternion
+from my_custom_message.msg import Visual
+from geometry_msgs.msg import PoseStamped
 import pandas as pd
 import os
 
@@ -32,13 +34,15 @@ class EKFNode(Node):
         self.P = np.eye(3)
 
         # 프로세스 노이즈 행렬 Q
-        self.Q = np.diag([2.0, 2.0, 0.05])
+        self.Q = np.diag([1.0, 1.0, 0.05])
 
         # 측정 모델 행렬 H
         self.H = np.eye(3)  # 단순 위치 및 각도 측정 반영
 
         # 측정 노이즈 행렬 R
-        self.R = np.diag([0.00025, 0.005, 0.001])  # x, y, yaw 측정 노이즈
+        self.R = np.diag([100.0, 100.0, 2.7*1e-3])  
+        # yaw(radian) 측정 노이즈 짧은 테스트 => drift오차 무시
+        # x,y는 측정 데이터 부재로 신뢰하지 않게 만듦. 이후 라이다 센서로 대체
 
         # 최신 센서 데이터 저장용 변수
         self.latest_odom = None
@@ -51,6 +55,12 @@ class EKFNode(Node):
 
         # 보정된 Pose 데이터 발행
         self.pose_pub = self.create_publisher(Pose, '/pose_corrected', 10)
+        # 시각화 토픽 발행
+        self.visual_pub = self.create_publisher(Visual,'/visual',10)
+        # rviz 토픽 발행
+        self.predict = self.create_publisher(PoseStamped,'/predict',10)
+        self.sensor = self.create_publisher(PoseStamped,'/sensor',10)
+        self.filter = self.create_publisher(PoseStamped,"/filter",10)
 
         self.timer = self.create_timer(self.dt, self.ekf_prediction)
 
@@ -76,6 +86,8 @@ class EKFNode(Node):
         self.latest_odom = msg
         self.v_enc = msg.twist.twist.linear.x
         self.w_enc = msg.twist.twist.angular.z
+        self.ori = msg.pose.pose.orientation
+        self.theta = self.quaternion_to_yaw(self.ori.x, self.ori.y, self.ori.z, self.ori.w)
 
     def imu_callback(self, msg):
         """ IMU 데이터를 수신하고 Yaw 및 가속도 저장 """
@@ -85,8 +97,8 @@ class EKFNode(Node):
             self.a_x = 0.0
         
         self.a_y = msg.linear_acceleration.y
-        q = msg.orientation
-        self.yaw_imu = self.quaternion_to_yaw(q.x, q.y, q.z, q.w)
+        self.q = msg.orientation
+        self.yaw_imu = self.quaternion_to_yaw(self.q.x, self.q.y, self.q.z, self.q.w)
         #self.get_logger().info(f"Raw Yaw (from IMU): {self.yaw_imu}°")
         #self.get_logger().info(f"ax= {self.a_x}")
 
@@ -121,6 +133,8 @@ class EKFNode(Node):
 
         # 공분산 예측: P_k = F_k * P_k-1 * F_k.T + Q
         self.P = F_k @ self.P @ F_k.T + self.Q
+        self.get_logger().info(f"[EKF before] x={self.x[0,0]}, y={self.x[1,0]}, yaw={float(self.x[2,0])*57.295779513082320876798154814105}°")
+
 
         self.ekf_update()
 
@@ -134,9 +148,6 @@ class EKFNode(Node):
         self.z[0,0] += self.v_enc * math.cos(self.delta_theta) * self.dt
         self.z[1, 0] += self.v_enc * math.sin(self.delta_theta) * self.dt
 
-         # EKF 업데이트 전 상태 로그
-        #self.get_logger().info(f"[EKF Before] x={self.x[0,0]:.4f}, y={self.x[1,0]:.4f}, yaw={math.degrees(self.x[2,0]):.2f}°")
-        #self.get_logger().info(f"[EKF Before] yaw_imu (Raw IMU) = {math.degrees(self.yaw_imu):.2f}°")
         # 칼만 이득 K 계산
         S = self.H @ self.P @ self.H.T + self.R
         K = self.P @ self.H.T @ np.linalg.inv(S)
@@ -151,6 +162,8 @@ class EKFNode(Node):
         #self.get_logger().info(f"[EKF After] x={self.x[0,0]:.4f}, y={self.x[1,0]:.4f}, yaw={math.degrees(self.x[2,0]):.2f}°")
 
         self.publish_corrected_pose()
+        self.visual()
+        self.rviz()
     #     self.log_data.append([K])
     #     self.save_to_excel()
 
@@ -167,9 +180,34 @@ class EKFNode(Node):
         pose_msg.position.x = float(self.x[0, 0])
         pose_msg.position.y = float(self.x[1, 0])
         pose_msg.orientation = self.yaw_to_quaternion(float(self.x[2, 0]))
-
         self.pose_pub.publish(pose_msg)
-        self.get_logger().info(f"x {pose_msg.position.x} y {pose_msg.position.y} yaw {float(self.x[2,0])*57.295779513082320876798154814105}")
+        self.get_logger().info(f"after ekf: x {pose_msg.position.x} y {pose_msg.position.y} yaw {float(self.x[2,0])*57.295779513082320876798154814105}")
+    
+    def visual(self):
+        plot = Visual()
+        plot.yaw_filter = self.x[2,0]*57.295779513082320876798154814105
+        plot.yaw_odom = self.theta*57.295779513082320876798154814105
+        plot.yaw_imu = self.yaw_imu*57.295779513082320876798154814105
+        self.visual_pub.publish(plot)
+
+    def rviz(self):
+        now = self.get_clock().now().to_msg()
+        pos_predict = PoseStamped()
+        pos_estimate = PoseStamped()
+        pos_filter= PoseStamped()
+
+        pos_predict.header.stamp = now
+        pos_predict.header.frame_id = 'odom'
+        pos_predict.pose.orientation = self.ori # 
+        self.predict.publish(pos_predict)
+        pos_estimate.header.stamp = now
+        pos_estimate.header.frame_id = 'odom'
+        pos_estimate.pose.orientation = self.q 
+        self.sensor.publish(pos_estimate)
+        pos_filter.header.stamp = now
+        pos_filter.header.frame_id = 'odom'
+        pos_filter.pose.orientation = self.yaw_to_quaternion(float(self.x[2, 0])) 
+        self.filter.publish(pos_filter)
 
 def main(args=None):
     rclpy.init(args=args)
